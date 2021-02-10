@@ -1,6 +1,8 @@
 package tuto_git;
 
 import java.awt.Frame;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Application extends Frame {
 
@@ -20,6 +22,13 @@ public class Application extends Frame {
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
+		
+		addWindowListener(new WindowAdapter(){  
+            public void windowClosing(WindowEvent e) {  
+                dispose();  
+            }  
+        });
+		
 	}
 
 }
