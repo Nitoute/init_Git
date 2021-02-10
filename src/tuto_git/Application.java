@@ -18,7 +18,9 @@ public class Application extends Frame {
 		Vue vue = new Vue();
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
-		this.setTitle("tutoriel 1");
+
+		this.setTitle("tutoriel 0");
+
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
